@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RotateCamera : MonoBehaviour
 {
-    public float rotationSpeed;
+    public float rotationSpeed = 75.0f; // Speed of the camera rotation
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
