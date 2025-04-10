@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
    private Rigidbody playerRb;
    private GameObject focalPoint;
-    public float speed = 5.0f; // Speed of the player
+    public float speed = 10.0f; // Speed of the player
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
