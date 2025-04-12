@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
    private Rigidbody playerRb;
    private GameObject focalPoint;
    private float powerupStrength = 15.0f;
-   public float speed = 10.0f; // Speed of the player
+   public float speed = 20.0f; // Speed of the player
    public bool hasPowerup;
    public GameObject powerupIndicator;
     
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator PowerupCountdownRoutine()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(8);
         hasPowerup = false;
         powerupIndicator.gameObject.SetActive(false);
         Debug.Log("Powerup has ended!");
