@@ -5,12 +5,13 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemyPrefab;
     private float spawnRange = 9.0f; // Range for spawning enemies
     public int enemyCount;
+    public int waveNumber = 1;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       SpawnEnemyWave(3);
+       SpawnEnemyWave(waveNumber);
         
     }
 
@@ -21,7 +22,8 @@ public class SpawnManager : MonoBehaviour
 
         if (enemyCount == 0)
         {
-            SpawnEnemyWave(1); // Spawn a new wave of enemies if there are none left
+            waveNumber++;
+            SpawnEnemyWave(waveNumber); // Spawn a new wave of enemies if there are none left
         }
     }
 
